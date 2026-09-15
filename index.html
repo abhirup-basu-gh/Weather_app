@@ -55,12 +55,21 @@
 </nav>
 
 <br><br><br><br><br>
-<div class ="container">
-  <div class="row">
-    <div class="col-md-12">
-      <h1 class="text-center">Welcome to My Weather App</h1>
-      <br><br><br>
-      
+<div class="text-center">
+  <!-- Keeps the icon and text grouped tightly together in the middle -->
+  <div class="d-inline-flex align-items-center gap-2">
+    
+    <!-- Location Pin Icon -->
+    <svg xmlns="http://w3.org" width="32" height="32" fill="currentColor" class="bi bi-geo-alt-fill text-dark" viewBox="0 0 16 16">
+      <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+    </svg>
+    
+    <!-- Your Location Text -->
+    <span class="fs-4 fw-medium"><h1>Cupertino</h1></span>
+    
+  </div>
+</div>
+ <br>
     </div>
     <div class="col-md-6">
       
@@ -69,7 +78,60 @@
 
 
 <div class="container">
-  <div class="row row-cols-1 row-cols-md-3 mb-3 text-center"> <div class="col"> <div class="card mb-4 rounded-3 shadow-sm"> <div class="card-header py-3"> <h4 class="my-0 fw-normal">Free</h4> </div> <div class="card-body"> <h1 class="card-title pricing-card-title">$0<small class="text-body-secondary fw-light">/mo</small></h1> <ul class="list-unstyled mt-3 mb-4"> <li>10 users included</li> <li>2 GB of storage</li> <li>Email support</li> <li>Help center access</li> </ul> <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for free</button> </div> </div> </div> <div class="col"> <div class="card mb-4 rounded-3 shadow-sm"> <div class="card-header py-3"> <h4 class="my-0 fw-normal">Pro</h4> </div> <div class="card-body"> <h1 class="card-title pricing-card-title">$15<small class="text-body-secondary fw-light">/mo</small></h1> <ul class="list-unstyled mt-3 mb-4"> <li>20 users included</li> <li>10 GB of storage</li> <li>Priority email support</li> <li>Help center access</li> </ul> <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button> </div> </div> </div> <div class="col"> <div class="card mb-4 rounded-3 shadow-sm border-primary"> <div class="card-header py-3 text-bg-primary border-primary"> <h4 class="my-0 fw-normal">Enterprise</h4> </div> <div class="card-body"> <h1 class="card-title pricing-card-title">$29<small class="text-body-secondary fw-light">/mo</small></h1> <ul class="list-unstyled mt-3 mb-4"> <li>30 users included</li> <li>15 GB of storage</li> <li>Phone and email support</li> <li>Help center access</li> </ul> <button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button> </div> </div> </div> </div>
+  <div class="row row-cols-1 row-cols-md-3 mb-3 text-center"> <div class="col"> <div class="card mb-4 rounded-3 shadow-sm"> <div class="card-header py-3"> <h4 class="my-0 fw-normal">Free</h4> </div> <div class="card-body"> <h1 class="card-title pricing-card-title">$0<small class="text-body-secondary fw-light">/mo</small></h1> <ul class="list-unstyled mt-3 mb-4"> <li>10 users included</li> <li>2 GB of storage</li> <li>Email support</li> <li>Help center access</li> </ul></div> </div> </div> <div class="col"> <div class="card mb-4 rounded-3 shadow-sm"> <div class="card-header py-3"> <h4 class="my-0 fw-normal">Pro</h4> </div> <div class="card-body"> <h1 class="card-title pricing-card-title">$15<small class="text-body-secondary fw-light">/mo</small></h1> <ul class="list-unstyled mt-3 mb-4"> <li>20 users included</li> <li>10 GB of storage</li> <li>Priority email support</li> <li>Help center access</li> </ul> </div> </div> </div> <div class="col"> <div class="card mb-4 rounded-3 shadow-sm border-primary"> <div class="card-header py-3 text-bg-primary border-primary"> <h4 class="my-0 fw-normal">Average</h4> </div> <div class="card-body"> <h1 class="card-title pricing-card-title">$29<small class="text-body-secondary fw-light">/mo</small></h1> <ul class="list-unstyled mt-3 mb-4"> <li>30 users included</li> <li>15 GB of storage</li> <li>Phone and email support</li> <li>Help center access</li> </ul>  </div> </div> </div> </div>
+</div>
+
+<div class="container">
+  <div class="table-responsive"> 
+    <table class="table border border-1 text-center"> 
+      <thead> 
+        <tr> 
+          <th style="width: 34%;"class="text-start"><h5>Cities</h5></th> 
+          <th style="width: 22%;"><h5>Minimum</h5></th>
+          <th style="width: 22%;"><h5>Maximum</h5></th> 
+          <th style="width: 22%;"><h5>Average</h5></th> 
+        </tr> 
+      </thead> 
+      <tbody> 
+        <tr> 
+          <th scope="row" class="text-start">Kolkata</th> 
+          <td>32°</td> 
+          <td>42°</td>
+          <td>35°</td>
+        </tr> 
+        <tr> 
+          <th scope="row" class="text-start">Delhi</th> 
+          <td>42°</td> 
+          <td>42°</td>
+          <td>42°</td> 
+        </tr> 
+        <tr> 
+          <th scope="row" class="text-start">Bangalore</th> 
+          <td>21°</td>
+          <td>21°</td>
+          <td>21°</td>
+        </tr> 
+        <tr> 
+          <th scope="row" class="text-start">Mumbai</th> 
+          <td>30°</td>
+          <td>30°</td>
+          <td>30°</td> 
+        </tr> 
+        <tr> 
+          <th scope="row" class="text-start">Chennai</th>
+          <td>20°</td>
+          <td>20°</td>
+          <td>20°</td>
+        </tr> 
+        <tr> 
+          <th scope="row" class="text-start">Hyderabad</th> 
+          <td>32°</td> 
+          <td>42°</td> 
+          <td>35°</td>
+        </tr> 
+      </tbody> 
+    </table> 
+  </div>
 </div>
 
 
